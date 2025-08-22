@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "Dhyonatan Folador",
+  "author": "Anonymous maker",
   "editor": "wokwi",
   "parts": [
     {
@@ -78,4 +78,5 @@
     [ "btn1:2.r", "esp:5V", "red", [ "v0" ] ]
   ],
   "dependencies": {}
+
 }
