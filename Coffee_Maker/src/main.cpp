@@ -35,10 +35,10 @@ const char* password = "";         // Senha da rede Wi-Fi
 const float BETA = 3950;
 
 // Configurações do Twilio
-const char* accountSid = "AC9bc92c484d3ae00958313a1f30453efe"; // SID da conta Twilio
-const char* auth_token = "dac51302c57052aaed15fc013459c625";   // Token de autenticação Twilio
-const char* fromNumber = "+13862103530";                       // Número de origem (Twilio)
-const char* toNumber = "+18777804236";                         // Número de destino para envio de SMS
+const char* accountSid = "AC9eji00095831793a1f790gg304h53egfe";   // SID da conta Twilio
+const char* auth_token = "dadthdt687d15fc013459c6hht47sd6ljgh";   // Token de autenticação Twilio
+const char* fromNumber = "+13884348303530";                       // Número de origem (Twilio)
+const char* toNumber = "+14888374532386";                         // Número de destino para envio de SMS
 
 // Configurações do MQTT
 const char* mqttBroker = "broker.emqx.io"; // Endereço do broker MQTT
@@ -181,4 +181,5 @@ void setup() {
 // Loop principal
 void loop() {
   mqttClient.loop(); // Mantém a conexão MQTT ativa
+
 }
