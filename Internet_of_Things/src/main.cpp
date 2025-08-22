@@ -9,7 +9,7 @@ HttpClient http;
 
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
-const char* host = "https://api.thingspeak.com/update?api_key=6N5GRQ4QP72HLH9A";
+const char* host = "https://api.thingspeak.com/update?api_key=6N5GRdgtSFGGHgbndD9A";
 
 #define DHT_PIN 32
 
@@ -97,4 +97,5 @@ void loop() {
   TempAndHumidity data = DHTSensor.getTempAndHumidity();
 
   delay(200);
+
 }*/
