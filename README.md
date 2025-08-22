@@ -13,7 +13,7 @@ Projeto de automação de uma cafeteira utilizando ESP32 para controle remoto e 
 - Monitoramento do processo de preparo
 - Notificação quando o café está pronto
 
-Este projeto simula uma aplicação de domótica, integrando sensores e atuadores em um dispositivo cotidiano.
+Este projeto simula uma aplicação real, integrando sensores e atuadores em um dispositivo cotidiano.
 
 ---
 
@@ -24,7 +24,7 @@ Sistema que utiliza o ESP32 como núcleo de uma rede de dispositivos conectados.
 **Funcionalidades:**
 - Comunicação entre sensores e atuadores via Wi-Fi
 - Controle remoto de dispositivos
-- Visualização de dados em interface web ou dashboard
+- Visualização de dados em interface web
 
 Ideal para demonstrar os princípios da Internet das Coisas e a versatilidade do ESP32 em ambientes conectados.
 
@@ -37,7 +37,7 @@ Projeto desenvolvido como parte de uma avaliação técnica presencial, aplicand
 **Destaques:**
 - Programação em C++ para controle de sensores
 - Captura de dados ambientais
-- Exibição de resultados em display ou interface
+- Exibição de resultados em display
 
 Este projeto evidencia a capacidade de aplicar conceitos teóricos em uma solução prática e funcional.
 
