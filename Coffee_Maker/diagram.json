@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "author": "Dhyonatan Folador",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 158.44,
+      "attrs": { "builder": "esp-idf" }
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": -74.7,
+      "left": -10.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 142.8,
+      "left": 294.6,
+      "rotate": 90,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -132.9, "left": 264.7, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic2", "top": -27.3, "left": 399.1, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": -153.6,
+      "left": 268.8,
+      "attrs": { "text": "Nivel do Café" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": -48,
+      "left": 403.2,
+      "attrs": { "text": "Tamanho do Copo" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": -76.8,
+      "left": 96,
+      "attrs": { "text": "Temperatura" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 85.8,
+      "left": 79.8,
+      "rotate": 90,
+      "attrs": { "color": "green", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ntc1:VCC", "esp:5V", "red", [ "v172.8", "h105.45" ] ],
+    [ "ntc1:GND", "esp:GND.1", "black", [ "v124.8", "h95.85" ] ],
+    [ "led1:C", "esp:GND.3", "black", [ "v0.4", "h-18.8", "v-76.8" ] ],
+    [ "ultrasonic1:GND", "esp:GND.3", "black", [ "v124.8", "h-1.2" ] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v288", "h-278.4", "v-48" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "blue", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:17", "green", [ "v0" ] ],
+    [ "ultrasonic2:VCC", "esp:5V", "red", [ "v182.4", "h-412.8", "v-48" ] ],
+    [ "ultrasonic2:GND", "esp:GND.3", "black", [ "v0" ] ],
+    [ "ultrasonic2:TRIG", "esp:4", "blue", [ "v0" ] ],
+    [ "ultrasonic2:ECHO", "esp:16", "green", [ "v0" ] ],
+    [ "ntc1:OUT", "esp:34", "green", [ "h0.1", "v38.4" ] ],
+    [ "esp:15", "led1:A", "red", [ "v0" ] ],
+    [ "esp:12", "btn1:1.r", "green", [ "h-38.25", "v-9.8" ] ],
+    [ "btn1:2.r", "esp:5V", "red", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
